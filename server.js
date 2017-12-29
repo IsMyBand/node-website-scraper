@@ -1,8 +1,8 @@
-var scrape = require('./website-scraper/index.js');
+var scrape = require('./index.js');
 
 scrape({
-  urls: ['http://revistero.teatredefum.net'],
-  directory: './lalenguadelasmaquinas',
+  urls: ['http://url-to-scrap'],
+  directory: './outputdirectory',
   sources: [
     {selector: 'img', attr: 'src'},
     {selector: 'link[rel="stylesheet"]', attr: 'href'}
